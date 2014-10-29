@@ -1,0 +1,87 @@
+<html>
+<head><title>Resume</title>
+<SCRIPT language="javascript">
+</SCRIPT>
+<script>
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "";
+    cell2.innerHTML = "";
+}
+</script></head>
+<body>
+<h2 align="center">RESUME</h3>
+<form action="pdf.php" method="post">
+<table align="left"><tr><td>NAME:</td><td><input type="text" name="name"></td></tr>
+<tr><td>E-Mail</td><td><input type="text" name="email"></td></tr>
+<tr><td>Contact No:</td><td><input type="text" name="number"></td></tr>
+</table>
+
+<table align="right"><tr><td>Address 1:</td><td><input type="text" name="add1"></td></tr>
+<tr><td>Address 2</td><td><input type="text" name="add2"></td></tr>
+<tr><td>Address 3</td><td><input type="text" name="add3"></td></tr>
+</table>
+<br><br><br><br><br>
+<hr>
+<h3 align="left">OBJECTIVE</h3>
+<textarea rows=3 cols=50 name="object" placeholder="Your Objective"></textarea>
+<br><br><br><br><br>
+<hr>
+<h3 align="left">TECHNICAL KNOWLWDGE & SKILLS</h3>
+
+<table border width="60%">
+<tr><td>Programming Enviroment</td><td><input type="text" name="prgenv" size=100></td></tr>
+<tr><td>Concepts</td><td><input type="text" name="concepts" size=100></td></tr><tr><td>OS Familiar</td><td><input type="text" name="os" size=100></td></tr>
+<tr><td>Tools Familiar</td><td><input type="text" name="tools" size=100></td></tr>
+</table>
+<br><br><br><br><br>
+<hr>
+<h3 align="left">Course Of Study</h3>
+
+<table id="myTable"border><tr>
+<th>Examination</th>
+<th>School/College</th>
+<th>Board/University</th>
+<th>Year of Passing</th>
+<th>Percentage</td></th>
+<tr><td><input type="text" name="exe10" size=20></td>
+<td><input type="text" name="sch10" size=20></td><td><input type="text" name="brd10" size=20></td>
+<td><input type="text" name="year10" size=20></td><td><input type="text" name="per10" size=20></td></tr>
+<tr><td><input type="text" name="exe12" size=20></td>
+<td><input type="text" name="sch12" size=20></td><td><input type="text" name="brd12" size=20></td>
+<td><input type="text" name="year12" size=20></td><td><input type="text" name="per12" size=20></td></tr><tr><td><input type="text" name="exe" size=20></td>
+<td><input type="text" name="sch" size=20></td><td><input type="text" name="brd" size=20></td>
+<td><input type="text" name="year" size=20></td><td><input type="text" name="per" size=20></td></tr>
+</table>
+<button onclick="myFunction()">Add</button>
+
+
+<h6>* Recent Qualifications</h6>
+<br><br><br>
+<hr>
+<h3 align="left">Project</h3>
+<table border width="70%"><tr>
+<th >Title</th>
+<th>Description</th>
+<tr><td><input type="text" name="title1" size=100></td>
+<td><input type="text" name="desc1" size=100></td><tr><td><input type="text" name="title2" size=100></td>
+<td><input type="text" name="desc2" size=100></td><tr><td><input type="text" name="title3" size=100></td>
+<td><input type="text" name="desc3" size=100></td>
+</table>
+<br><br><br>
+<hr>
+<h3 align="left">Extra Curricular Activities</h3>
+<table border width="45%"><tr>
+<tr><td><input type="text" name="ex1" size=100></td><tr>
+<td><input type="text" name="ex2" size=100></td></tr><tr><td><input type="text" name="ex3" size=100></td><tr>
+<td><input type="text" name="ex4" size=100></td></tr><tr><td><input type="text" name="ex5" size=100></td></tr>
+</table>
+<br><br><br>
+<hr>
+<input type="submit" value="SUBMIT"/> 
+</form>
+</body>
+</html>
